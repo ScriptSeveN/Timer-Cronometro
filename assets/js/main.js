@@ -41,8 +41,6 @@ function clearTimer() {
     timerStop = null;
 }
 
-startButton.addEventListener('click', ()=> {
-    startTimer();
-});
+startButton.addEventListener('click', startTimer);
 stopButton.addEventListener('click', stopTimer);
 clearButton.addEventListener('click', clearTimer);
