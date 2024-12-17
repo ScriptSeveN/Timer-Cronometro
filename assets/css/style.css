@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.relogio {
+  font-size: 3em;
+}
+
+
+.buttons button {
+  background: linear-gradient(135deg, #6e8efb, #a777e3); /* Gradiente de cor */
+  color: #ffffff; /* Cor do texto */
+  border: none;
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 12px 24px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold;
+  text-transform: uppercase; /* Texto em maiúsculo */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: all 0.3s ease; /* Transição suave */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra do botão */
+  outline: none; /* Remove o contorno padrão */
+}
+
+.buttons button:hover {
+    background: linear-gradient(135deg, #5d7cfb, #9566d9); /* Altera o gradiente ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25); /* Aumenta a sombra */
+    transform: translateY(-3px); /* Efeito de elevação */
+}
+
+.stopClock {
+  color: red;
+}
